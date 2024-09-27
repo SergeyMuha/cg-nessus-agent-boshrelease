@@ -18,3 +18,6 @@ blobs/*
 tmp
 my*.yml
 ci/credentials.yml
+nessus-agent-*.tgz
+src/apt/nessus-agent/NessusAgent-10.7.3-ubuntu1604_amd64.deb
+
