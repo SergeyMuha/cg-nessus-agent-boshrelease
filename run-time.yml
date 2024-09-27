@@ -1,0 +1,17 @@
+releases:
+- name: nessus-agent
+  version: 0+dev.1
+
+addons:
+- name: security
+  jobs:
+  - name: nessus-agent
+    release: nessus-agent
+    properties:
+      nessus-agent:
+        key: ((nessus-agent-key))
+        server: 172.24.14.171
+        port: 8834
+        group: WECA-GH-SVR
+  include:
+    deployments: [nelson-deployment]
